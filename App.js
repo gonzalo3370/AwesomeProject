@@ -1,6 +1,6 @@
 import React from 'react';
 import { StyleSheet, TextInput, Text, View } from 'react-native';
-import { isNumber } from 'util';
+//import { isNumber } from 'util';
 
 export default class App extends React.Component {
   constructor(props){
@@ -12,7 +12,7 @@ export default class App extends React.Component {
   }
 
   cuadro1_cambia = (loqueescriben)=>{
-    if(isNumber(loqueescriben))
+    if(isNaN(loqueescriben))
     {
       this.setState({cuadro1: loqueescriben});
     }    
